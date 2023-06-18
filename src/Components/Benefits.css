@@ -1,0 +1,45 @@
+.board{
+    background-color: #DC9800;
+    width: 150px;
+    height: 37px;
+    text-align: center;
+    border-radius: 25px;
+    position: relative;
+    top: 10px;
+    z-index:10;
+    opacity:1;
+    font-family: "Poppins", sans-serif;
+    font-size: 15.6992px;
+    font-weight:bold;
+}
+.pfont{
+    color: black;
+    font-family: "PT Serif", serif;
+    font-size: 19.9808px;
+    font-weight: 500;
+}
+.photo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.swing{
+    animation: swing ease-in-out 4s infinite alternate;
+    transform-origin: center -20px;
+}
+@keyframes swing {
+    20%{
+        transform: skew(0deg, 15deg);
+        transform: rotate3d(0,0,1,7deg);
+    }
+    40%{
+        transform: rotate3d(0,0,1,-7deg);
+
+    }
+    60%{
+        transform: rotate3d(0,0,1,5deg);
+    }
+    80%{
+        transform: rotate3d(0,0,1,0deg);
+    }
+}

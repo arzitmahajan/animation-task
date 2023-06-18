@@ -1,0 +1,343 @@
+.wrap{
+    height:400px;
+    width:100%;
+    position: relative;
+    transition-timing-function: ease;
+}
+.pt-font{
+    position: relative;
+    top:60px;
+    font-family:"PT Serif";
+    font-size: 40px;
+    font-weight: 500;
+    
+}
+div.wrap>*,div.wrap>*:after,div.wrap>*::before{
+    line-height: 30px;
+    animation-direction:reverse ;
+}
+.sp{
+    font-family: "Poppins", sans-serif;
+    font-size: 15.6992px;
+    font-weight:bold;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+.panel1,.panel1:after,.panel1:before{
+    width: 150px;
+    height: 37px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #DC9800;
+    position: absolute;
+    top:370px;
+    left: 0px;
+    right:100px;
+    bottom: 0px;
+    animation: fall1 1s linear;
+    animation-delay: 2s;
+    transform: rotate(-20deg);
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+.panel2,.panel2:after,.panel2:before{
+    width: 150px;
+    height: 37px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #DC9800;
+    position: absolute;
+    top:370px;
+    left: 200px;
+    right:10px;
+    bottom:0px;
+    animation: fall2 1s linear;
+    animation-delay: 2s;
+    transform: rotate(-5deg);
+    visibility: hidden;
+    animation-fill-mode: forwards;
+
+}
+.panel3,.panel3:after,.panel3:before{
+    width: 150px;
+    height: 37px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #DC9800;
+    position: absolute;
+    top:350px;
+    left: 330px;
+    right:0px;
+    bottom:0px;
+    animation: fall3 1s linear;
+    animation-delay: 2.5s;
+    transform: rotate(20deg);
+    visibility: hidden;
+    animation-fill-mode: forwards;
+   
+
+}
+.panel4,.panel4:after,.panel4:before{
+    width: 150px;
+    height: 37px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #DC9800;
+    position: absolute;
+    top:370px;
+    left: 500px;
+    right:0px;
+    bottom:0px;
+    animation: fall4 1s linear;
+    animation-delay: 2.8s;
+    transform: rotate(20deg);
+    visibility: hidden;
+    animation-fill-mode: forwards;
+   
+
+}
+.panel5,.panel5:after,.panel5:before{
+    width: 150px;
+    height: 37px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #DC9800;
+    position: absolute;
+    top:370px;
+    left: 730px;
+    right:0px;
+    bottom:0px;
+    animation: fall5 1s linear;
+    animation-delay: 2.9s;
+    transform: rotate(10deg);
+    visibility: hidden;
+    animation-fill-mode: forwards;
+
+}
+.panel6,.panel6:after,.panel6:before{
+    width: 150px;
+    height: 37px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #DC9800;
+    position: absolute;
+    top:290px;
+    left: 300px;
+    right:0px;
+    bottom:0px;
+    animation: fall6 1s linear;
+    animation-delay: 2.9s;
+    transform: rotate(10deg);
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+.panel7,.panel7:after,.panel7:before{
+    width: 150px;
+    height: 37px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #DC9800;
+    position: absolute;
+    top:320px;
+    left: 650px;
+    right:0px;
+    bottom:0px;
+    animation: fall7 1s linear;
+    animation-delay: 3s;
+    transform: rotate(-30deg);
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+.panel8,.panel8:after,.panel8:before{
+    width: 150px;
+    height: 37px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #DC9800;
+    position: absolute;
+    top:270px;
+    left: 780px;
+    right:0px;
+    bottom:0px;
+    animation: fall8 1s linear;
+    animation-delay: 3.2s;
+    transform: rotate(10deg);
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+.panel9,.panel9:after,.panel9:before{
+    width: 150px;
+    height: 37px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #DC9800;
+    position: absolute;
+    top:350px;
+    left: 930px;
+    right:0px;
+    bottom:0px;
+    animation: fall9 1s linear;
+    animation-delay: 2.5s;
+    transform: rotate(-10deg);
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fall {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-300px);
+
+    }
+    
+}
+@keyframes fall1 {
+    0%{
+        visibility: visible;
+    }
+    10%{
+        transform: rotate(20deg);
+    }
+    40%{
+        transform: translateY(0px) ; 
+    }
+    100%{
+        transform: translateY(-300px) ; 
+    }
+    
+}
+@keyframes fall2 {
+    0%{
+        visibility: visible;
+    }
+    10%{
+        transform: rotate(5deg);
+    }
+    40%{
+        transform: translateY(0px) ; 
+    }
+    100%{
+        transform: translateY(-300px) ; 
+
+    }
+    
+}
+@keyframes fall3 {
+    0%{
+        visibility: visible;
+    }
+    10%{
+        transform: rotate(-20deg);
+    }
+    40%{
+        transform: translateY(0px) ; 
+    }
+    100%{
+        transform: translateY(-300px) ; 
+
+    }
+    
+}
+@keyframes fall6 {
+    0%{
+        visibility: visible;
+    }
+    10%{
+        transform: rotate(-10deg);
+    }
+    40%{
+        transform: translateY(0px) ; 
+    }
+    100%{
+        transform: translateY(-300px) ; 
+
+    }
+    
+}
+
+@keyframes fall4 {
+    0%{
+        visibility: visible;
+    }
+    10%{
+        transform: rotate(-20deg);
+    }
+    40%{
+        transform: translateY(0px) ; 
+    }
+    100%{
+        transform: translateY(-300px) ; 
+
+    }
+    
+}
+
+@keyframes fall7 {
+    0%{
+        visibility: visible;
+    }
+    10%{
+        transform: rotate(30deg);
+    }
+    40%{
+        transform: translateY(0px) ; 
+    }
+    100%{
+        transform: translateY(-300px) ; 
+
+    }
+    
+}
+@keyframes fall5 {
+    0%{
+        visibility: visible;
+    }
+    10%{
+        transform: rotate(-10deg);
+    }
+    40%{
+        transform: translateY(0px) ; 
+    }
+    100%{
+        transform: translateY(-300px) ; 
+
+    }
+    
+}
+@keyframes fall8 {
+    0%{
+        visibility: visible;
+    }
+    10%{
+        transform: rotate(-10deg);
+    }
+    40%{
+        transform: translateY(0px) ; 
+    }
+    100%{
+        transform: translateY(-300px) ; 
+
+    }
+    
+}
+
+@keyframes fall9{
+    0%{
+        visibility: visible;
+    }
+    10%{
+        transform: rotate(10deg);
+    }
+    40%{
+        transform: translateY(0px) ; 
+    }
+    100%{
+        transform: translateY(-300px) ; 
+
+    }
+    
+}
